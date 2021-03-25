@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Caslon Text", serif;
+  background-color: #fff;
+  display: flex;
+}
+
+/* .background-image {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  padding-top: 50px;
+} */
+
+/* START OF SIDE NAVIGATION SECTION */
+
+#sidenav {
+  z-index: 9999;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.open-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+  transform: translateX(0);
+}
+
+.nav-black {
+  background-color: rgb(26, 24, 24);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+
+.nav-black.nav.visible {
+  transition-delay: 0s;
+}
+
+.nav-gold {
+  background-color: rgb(168, 133, 38);
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.nav-gold.visible {
+  transition-delay: 0.2s;
+}
+
+.nav-white {
+  background-color: #fff;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+}
+
+.nav-white.visible {
+  transition-delay: 0.4s;
+}
+
+.close-btn {
+  opacity: 0.5;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: rgb(26, 24, 24);
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* START OF 'MY LIBRARY' CONTENT */
+
+.content {
+  margin: 7% 7% 5% 5%;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1335px;
+  margin: 50px auto;
+}
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.grid-item {
+  background-color: rgb(255, 239, 219);
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #000;
+  height: auto;
+  flex-basis: 20%;
+  -ms-flex: auto;
+  width: 225px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: space-around;
+}
+
+/* Using media queries to create a responsive library */
+@media (max-width: 1333px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+
+@media (max-width: 1073px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+
+@media (max-width: 815px) {
+  .grid-item {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 555px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
+}
+
+.book-cover {
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: auto;
+}
+
+span.book-title {
+  font-size: 20px;
+  font-weight: 700;
+}

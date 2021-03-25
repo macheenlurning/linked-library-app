@@ -1,0 +1,51 @@
+1)  user opens up website
+2)  user is prompted to login
+3)  user logs into web app
+4)  home page opens:
+        left side, navbar with clickable navigation:
+            -  User's Library (link)
+            -  Add New Book (link)
+        home page shows = User's Saved Library, Searchbar to search within current saved Library
+5)  Left Nav - "Add New Book" link is clicked
+        pop up prompt:
+            -  (Needed) Asks User for Title info
+            -  (Optional) Asks User for Author info
+            -  (Needed) Asks User "Did you finish reading this book?" (Y / N)
+            -  (Optional) Rating for this Book - 1 to 5
+            -  Submit Book button
+6)  New Book is Added:
+        pop up prompt:
+            -  Shows picture of book cover
+            -  (Needed) Asks user "Is this the correct book?" (Y / N)
+            -  Submit button
+        if "Yes":
+            -  alert "Success! (Title) Added to Your Library"
+            -  new book info populated in User's Library
+        if "No":
+            -  Repeat steps with next result until "Yes" is achieved
+7)  User's Library link is clicked:
+        goes to the Library homepage:
+            -  Lists pictures of book covers with most recent added book at top of the Lists
+            -  Each picture is clickable
+            -  When picture is clicked a popup is deployed
+                    a)  Shows Book info
+                        - Title
+                        - Author
+                        - Genre
+                        - Pages
+                        - Book cover
+                        - Finished: Status
+                        - Rating
+                    b)  Edit Book button
+                        - allows user to custom each field
+                        - submit new info button
+                        - clear all button
+            -  User Stats:
+                    a)  Total Pages Read 
+                    b)  Pages Per Day / Week / Month / Year
+                    c)  Favorite Genre
+                    d)  Favorite Author
+                    e)  Current Genre
+                    f)  Current Author
+                    g)  Top Rated Books (shows all books rated 5)
+                    
